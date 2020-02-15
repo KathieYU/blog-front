@@ -12,14 +12,17 @@
             </div>
             <div class="rigthNav">
               <span class="iconfont icon-wifi1"></span>
+              <input type="text" class="srchInp">
               <span class="iconfont icon-seekicon"></span>
             </div>
           </div>
           
         </header>
-        <section>
-          <router-view/>
-        </section>
+        <div class="main">
+          <section>
+           <router-view></router-view>
+          </section>
+        </div>
       </div>
   </div>
 </template>
@@ -48,14 +51,20 @@ export default {
       color: #fff;
       text-shadow: 0 1px rgba(0,0,0,0.2);
       opacity: 0.6;
-      margin-right: 15px;
+      margin-right: 20px;
       &:hover{
         opacity: 1;
       }
     }
-    span{
-      margin-left: 15px;
-      font-size: 16px;
+    .rightNav{
+      .srchInp{
+        display: inline-block;
+        width: 80px;
+        height: 20px;
+        outline: none;
+        border: none;
+        background: #ddd;
+      }
     }
   }
   .title{
